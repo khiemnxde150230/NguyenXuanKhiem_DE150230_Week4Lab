@@ -1,0 +1,26 @@
+﻿<Window x:Class="AsynchronousWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsynchronousWPF"
+        mc:Ignorable="d"
+            Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel>
+            <TextBlock FontWeight="Bold" FontSize="16" Margin="10">Prime Number Calculation</TextBlock>
+            <Button Content="Calculate Primes Sequentially" Click="CalculatePrimesSequentially_Click" Margin="10"/>
+            <Button Content="Calculate Primes in Parallel" Click="CalculatePrimesParallel_Click" Margin="10"/>
+        </StackPanel>
+
+        <!-- Student Management Section -->
+        <StackPanel Margin="0,20,0,0">
+            <TextBlock FontWeight="Bold" FontSize="16" Margin="10">Student Management</TextBlock>
+            <Button Content="Manage Students Sequentially" Click="ManageStudentsSequentially_Click" Margin="10"/>
+            <Button Content="Manage Students in Parallel" Click="ManageStudentsParallel_Click" Margin="10"/>
+        </StackPanel>
+        <TextBox x:Name="ResultTextBox" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10,151,10,10"/>
+
+    </Grid>
+</Window>
